@@ -2,23 +2,24 @@
 
 ================================================================================
 
-File:
+##File name:
 final_data_set.txt
 
-File description: 
+##File description: 
 Merges the training and the test sets to create one data set.
 Extracts only the measurements on the mean and standard deviation for each measurement.
 Uses descriptive activity names to name the activities in the data set.
 
-Number of obs:
+##Number of obs:
 10299
 
-Number of variables:
+##Number of variables:
 70
 
-Variable Description:
+##Variable Description:
 $ train_test_labels          : Factor w/ 2 levels
                                test, train
+                               
 $ activity_code              : int
                                1: WALKING
                                2: WALKING_UPSTAIRS
@@ -26,11 +27,14 @@ $ activity_code              : int
                                4: SITTING
                                5: STANDING
                                6: LAYING
+                               
 $ activity_labels            : Factor w/ 6 levels
                                LAYING, SITTING, STANDING, WALKING,
                                WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+                               
 $ subject_id                 : int
                                ID of 30 volunteers, range is from 1 to 30.
+                               
 $ tBodyAcc-mean()-X          : num  
 $ tBodyAcc-mean()-Y          : num  
 $ tBodyAcc-mean()-Z          : num  
@@ -98,29 +102,31 @@ $ fBodyBodyAccJerkMag-std()  : num
 $ fBodyBodyGyroMag-std()     : num  
 $ fBodyBodyGyroJerkMag-std() : num 
 
-Note:
+##Note:
 Measurements are normalized and bounded within [-1,1].
 
 ================================================================================
 
-File:
+##File name:
 second_data_set.txt
 
-File description: 
+##File description: 
 To the previous final_data_set.txt, summarize the average of each variable for
 each activity and each subject.
 
-Number of obs:
+##Number of obs:
 180
 
-Number of variables:
+##Number of variables:
 70
 
-Variable Description:
+##Variable Description:
 $ train_test_labels          : Factor w/ 2 levels
                                test, train
+                               
 $ subject_id                 : int
                                ID of 30 volunteers, range is from 1 to 30.
+                               
 $ activity_code              : int
                                1: WALKING
                                2: WALKING_UPSTAIRS
@@ -128,9 +134,11 @@ $ activity_code              : int
                                4: SITTING
                                5: STANDING
                                6: LAYING
+                               
 $ activity_labels            : Factor w/ 6 levels
                                LAYING, SITTING, STANDING, WALKING,
                                WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+                               
 $ tBodyAcc-mean()-X          : num  
 $ tBodyAcc-mean()-Y          : num  
 $ tBodyAcc-mean()-Z          : num  
@@ -198,5 +206,5 @@ $ fBodyBodyAccJerkMag-std()  : num
 $ fBodyBodyGyroMag-std()     : num  
 $ fBodyBodyGyroJerkMag-std() : num 
 
-Note:
+##Note:
 Measurements are normalized and bounded within [-1,1].
